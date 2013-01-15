@@ -37,12 +37,17 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string></string>
+				<string>public.webp</string>
 			</array>
 			<key>UTTypeIdentifier</key>
 			<string>com.closetou.webp</string>
 			<key>UTTypeTagSpecification</key>
-			<dict/>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>webp</string>
+				</array>
+			</dict>
 		</dict>
 	</array>
 	<key>CFBundleDocumentTypes</key>

@@ -19,6 +19,9 @@
 {
     // Insert code here to initialize your application
     // NSLog(@"applicationDidFinishLaunching: %@",aNotification);
+//    NSImage *previewImage = [[[NSImage alloc] initWithContentsOfFile:@"/Users/Darcy/Downloads/hello.jpg"] autorelease];
+//    NSLog(@"previewImage: %@",previewImage);
+//    self.imageView.image = previewImage;
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)aNotification{
@@ -33,6 +36,7 @@
 
 - (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename{
     // NSLog(@"filename: %@",filename);
+    
     WebPImage* image = [[[WebPImage alloc] initFromFile:filename] autorelease];
     // NSLog(@"image: %@",image.fullImage);
     self.imageView.image = image.fullImage;

@@ -5,7 +5,7 @@
 //  Created by Darcy on 1/15/13.
 //  Copyright (c) 2013 Darcy Liu. All rights reserved.
 //
-
+#import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
 
 @interface WebPImage : NSObject

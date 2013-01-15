@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C709668316A59A5000506754 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C709668216A59A5000506754 /* QuickLook.framework */; };
+		C709668516A59A5000506754 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C709668416A59A5000506754 /* ApplicationServices.framework */; };
+		C709668716A59A5000506754 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C709668616A59A5000506754 /* CoreServices.framework */; };
+		C709668916A59A5000506754 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C709668816A59A5000506754 /* CoreFoundation.framework */; };
+		C709668F16A59A5000506754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C709668D16A59A5000506754 /* InfoPlist.strings */; };
+		C709669116A59A5000506754 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C709669016A59A5000506754 /* GenerateThumbnailForURL.m */; };
+		C709669316A59A5000506754 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C709669216A59A5000506754 /* GeneratePreviewForURL.m */; };
+		C709669516A59A5000506754 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C709669416A59A5000506754 /* main.c */; };
+		C709669B16A59A8A00506754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F8866516A580FD0095AF8F /* Cocoa.framework */; };
+		C709669D16A59C0500506754 /* WebP.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = C709668116A59A4F00506754 /* WebP.qlgenerator */; };
+		C709669E16A59DC800506754 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F886A416A5897E0095AF8F /* libwebp.a */; };
+		C70966A816A59E9E00506754 /* WebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F886AC16A589D20095AF8F /* WebPImage.m */; };
 		C7F8866616A580FD0095AF8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F8866516A580FD0095AF8F /* Cocoa.framework */; };
 		C7F8867016A580FD0095AF8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F8866E16A580FD0095AF8F /* InfoPlist.strings */; };
 		C7F8867216A580FD0095AF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F8867116A580FD0095AF8F /* main.m */; };
@@ -17,7 +29,31 @@
 		C7F886AD16A589D20095AF8F /* WebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F886AC16A589D20095AF8F /* WebPImage.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C709669C16A59BE500506754 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../Library/QuickLook;
+			dstSubfolderSpec = 6;
+			files = (
+				C709669D16A59C0500506754 /* WebP.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C709668116A59A4F00506754 /* WebP.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebP.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		C709668216A59A5000506754 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C709668416A59A5000506754 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		C709668616A59A5000506754 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C709668816A59A5000506754 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C709668C16A59A5000506754 /* WebP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebP-Info.plist"; sourceTree = "<group>"; };
+		C709668E16A59A5000506754 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C709669016A59A5000506754 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		C709669216A59A5000506754 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		C709669416A59A5000506754 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C709669616A59A5000506754 /* WebP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebP-Prefix.pch"; sourceTree = "<group>"; };
 		C7F8866116A580FD0095AF8F /* WebP-Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebP-Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F8866516A580FD0095AF8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C7F8866816A580FD0095AF8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -40,6 +76,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C709667C16A59A4F00506754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C709669E16A59DC800506754 /* libwebp.a in Frameworks */,
+				C709669B16A59A8A00506754 /* Cocoa.framework in Frameworks */,
+				C709668316A59A5000506754 /* QuickLook.framework in Frameworks */,
+				C709668516A59A5000506754 /* ApplicationServices.framework in Frameworks */,
+				C709668716A59A5000506754 /* CoreServices.framework in Frameworks */,
+				C709668916A59A5000506754 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7F8865E16A580FD0095AF8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +101,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C709668A16A59A5000506754 /* WebP */ = {
+			isa = PBXGroup;
+			children = (
+				C709669016A59A5000506754 /* GenerateThumbnailForURL.m */,
+				C709669216A59A5000506754 /* GeneratePreviewForURL.m */,
+				C709669416A59A5000506754 /* main.c */,
+				C709668B16A59A5000506754 /* Supporting Files */,
+			);
+			path = WebP;
+			sourceTree = "<group>";
+		};
+		C709668B16A59A5000506754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C709668C16A59A5000506754 /* WebP-Info.plist */,
+				C709668D16A59A5000506754 /* InfoPlist.strings */,
+				C709669616A59A5000506754 /* WebP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C7F8865616A580FD0095AF8F = {
 			isa = PBXGroup;
 			children = (
 				C7F8866B16A580FD0095AF8F /* WebP-Viewer */,
+				C709668A16A59A5000506754 /* WebP */,
 				C7F8866416A580FD0095AF8F /* Frameworks */,
 				C7F8866216A580FD0095AF8F /* Products */,
 			);
@@ -65,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F8866116A580FD0095AF8F /* WebP-Viewer.app */,
+				C709668116A59A4F00506754 /* WebP.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +146,10 @@
 			children = (
 				C7F886A416A5897E0095AF8F /* libwebp.a */,
 				C7F8866516A580FD0095AF8F /* Cocoa.framework */,
+				C709668216A59A5000506754 /* QuickLook.framework */,
+				C709668416A59A5000506754 /* ApplicationServices.framework */,
+				C709668616A59A5000506754 /* CoreServices.framework */,
+				C709668816A59A5000506754 /* CoreFoundation.framework */,
 				C7F8866716A580FD0095AF8F /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -135,7 +211,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C709667D16A59A4F00506754 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		C709668016A59A4F00506754 /* WebP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C709669916A59A5000506754 /* Build configuration list for PBXNativeTarget "WebP" */;
+			buildPhases = (
+				C709667B16A59A4F00506754 /* Sources */,
+				C709667C16A59A4F00506754 /* Frameworks */,
+				C709667D16A59A4F00506754 /* Headers */,
+				C709667E16A59A4F00506754 /* Resources */,
+				C709667F16A59A4F00506754 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebP;
+			productName = WebP;
+			productReference = C709668116A59A4F00506754 /* WebP.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
 		C7F8866016A580FD0095AF8F /* WebP-Viewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F8867F16A580FE0095AF8F /* Build configuration list for PBXNativeTarget "WebP-Viewer" */;
@@ -143,6 +248,7 @@
 				C7F8865D16A580FD0095AF8F /* Sources */,
 				C7F8865E16A580FD0095AF8F /* Frameworks */,
 				C7F8865F16A580FD0095AF8F /* Resources */,
+				C709669C16A59BE500506754 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -176,11 +282,20 @@
 			projectRoot = "";
 			targets = (
 				C7F8866016A580FD0095AF8F /* WebP-Viewer */,
+				C709668016A59A4F00506754 /* WebP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C709667E16A59A4F00506754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C709668F16A59A5000506754 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7F8865F16A580FD0095AF8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +308,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXRezBuildPhase section */
+		C709667F16A59A4F00506754 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C709667B16A59A4F00506754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70966A816A59E9E00506754 /* WebPImage.m in Sources */,
+				C709669116A59A5000506754 /* GenerateThumbnailForURL.m in Sources */,
+				C709669316A59A5000506754 /* GeneratePreviewForURL.m in Sources */,
+				C709669516A59A5000506754 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7F8865D16A580FD0095AF8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +343,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C709668D16A59A5000506754 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C709668E16A59A5000506754 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C7F8866E16A580FD0095AF8F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -234,6 +378,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C709669716A59A5000506754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebP/WebP-Prefix.pch";
+				INFOPLIST_FILE = "WebP/WebP-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		C709669816A59A5000506754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebP/WebP-Prefix.pch";
+				INFOPLIST_FILE = "WebP/WebP-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
 		C7F8867D16A580FE0095AF8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +506,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C709669916A59A5000506754 /* Build configuration list for PBXNativeTarget "WebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C709669716A59A5000506754 /* Debug */,
+				C709669816A59A5000506754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C7F8865B16A580FD0095AF8F /* Build configuration list for PBXProject "WebP-Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
