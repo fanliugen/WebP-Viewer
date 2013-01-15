@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WebP-Viewer' target in the 'WebP-Viewer' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

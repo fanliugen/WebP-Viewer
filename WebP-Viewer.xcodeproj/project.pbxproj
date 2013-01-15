@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7F8866616A580FD0095AF8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F8866516A580FD0095AF8F /* Cocoa.framework */; };
+		C7F8867016A580FD0095AF8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F8866E16A580FD0095AF8F /* InfoPlist.strings */; };
+		C7F8867216A580FD0095AF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F8867116A580FD0095AF8F /* main.m */; };
+		C7F8867616A580FD0095AF8F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C7F8867416A580FD0095AF8F /* Credits.rtf */; };
+		C7F8867916A580FD0095AF8F /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F8867816A580FD0095AF8F /* CLAppDelegate.m */; };
+		C7F8867C16A580FE0095AF8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F8867A16A580FE0095AF8F /* MainMenu.xib */; };
+		C7F886A516A5897E0095AF8F /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F886A416A5897E0095AF8F /* libwebp.a */; };
+		C7F886AD16A589D20095AF8F /* WebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F886AC16A589D20095AF8F /* WebPImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7F8866116A580FD0095AF8F /* WebP-Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebP-Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F8866516A580FD0095AF8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C7F8866816A580FD0095AF8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C7F8866916A580FD0095AF8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C7F8866A16A580FD0095AF8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7F8866D16A580FD0095AF8F /* WebP-Viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebP-Viewer-Info.plist"; sourceTree = "<group>"; };
+		C7F8866F16A580FD0095AF8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7F8867116A580FD0095AF8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7F8867316A580FD0095AF8F /* WebP-Viewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebP-Viewer-Prefix.pch"; sourceTree = "<group>"; };
+		C7F8867516A580FD0095AF8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C7F8867716A580FD0095AF8F /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		C7F8867816A580FD0095AF8F /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		C7F8867B16A580FE0095AF8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C7F886A416A5897E0095AF8F /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebp.a; path = "WebP-Viewer/lib/libwebp.a"; sourceTree = "<group>"; };
+		C7F886A816A5898B0095AF8F /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		C7F886A916A5898B0095AF8F /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		C7F886AA16A5898B0095AF8F /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		C7F886AB16A589D20095AF8F /* WebPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPImage.h; sourceTree = "<group>"; };
+		C7F886AC16A589D20095AF8F /* WebPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPImage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F8865E16A580FD0095AF8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F886A516A5897E0095AF8F /* libwebp.a in Frameworks */,
+				C7F8866616A580FD0095AF8F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F8865616A580FD0095AF8F = {
+			isa = PBXGroup;
+			children = (
+				C7F8866B16A580FD0095AF8F /* WebP-Viewer */,
+				C7F8866416A580FD0095AF8F /* Frameworks */,
+				C7F8866216A580FD0095AF8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F8866216A580FD0095AF8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8866116A580FD0095AF8F /* WebP-Viewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F8866416A580FD0095AF8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F886A416A5897E0095AF8F /* libwebp.a */,
+				C7F8866516A580FD0095AF8F /* Cocoa.framework */,
+				C7F8866716A580FD0095AF8F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F8866716A580FD0095AF8F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8866816A580FD0095AF8F /* AppKit.framework */,
+				C7F8866916A580FD0095AF8F /* CoreData.framework */,
+				C7F8866A16A580FD0095AF8F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C7F8866B16A580FD0095AF8F /* WebP-Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				C7F886A616A5898B0095AF8F /* include */,
+				C7F8867716A580FD0095AF8F /* CLAppDelegate.h */,
+				C7F8867816A580FD0095AF8F /* CLAppDelegate.m */,
+				C7F8867A16A580FE0095AF8F /* MainMenu.xib */,
+				C7F8866C16A580FD0095AF8F /* Supporting Files */,
+				C7F886AB16A589D20095AF8F /* WebPImage.h */,
+				C7F886AC16A589D20095AF8F /* WebPImage.m */,
+			);
+			path = "WebP-Viewer";
+			sourceTree = "<group>";
+		};
+		C7F8866C16A580FD0095AF8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8866D16A580FD0095AF8F /* WebP-Viewer-Info.plist */,
+				C7F8866E16A580FD0095AF8F /* InfoPlist.strings */,
+				C7F8867116A580FD0095AF8F /* main.m */,
+				C7F8867316A580FD0095AF8F /* WebP-Viewer-Prefix.pch */,
+				C7F8867416A580FD0095AF8F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7F886A616A5898B0095AF8F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C7F886A716A5898B0095AF8F /* webp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C7F886A716A5898B0095AF8F /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				C7F886A816A5898B0095AF8F /* decode.h */,
+				C7F886A916A5898B0095AF8F /* encode.h */,
+				C7F886AA16A5898B0095AF8F /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7F8866016A580FD0095AF8F /* WebP-Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F8867F16A580FE0095AF8F /* Build configuration list for PBXNativeTarget "WebP-Viewer" */;
+			buildPhases = (
+				C7F8865D16A580FD0095AF8F /* Sources */,
+				C7F8865E16A580FD0095AF8F /* Frameworks */,
+				C7F8865F16A580FD0095AF8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebP-Viewer";
+			productName = "WebP-Viewer";
+			productReference = C7F8866116A580FD0095AF8F /* WebP-Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F8865816A580FD0095AF8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Darcy Liu";
+			};
+			buildConfigurationList = C7F8865B16A580FD0095AF8F /* Build configuration list for PBXProject "WebP-Viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7F8865616A580FD0095AF8F;
+			productRefGroup = C7F8866216A580FD0095AF8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F8866016A580FD0095AF8F /* WebP-Viewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7F8865F16A580FD0095AF8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F8867016A580FD0095AF8F /* InfoPlist.strings in Resources */,
+				C7F8867616A580FD0095AF8F /* Credits.rtf in Resources */,
+				C7F8867C16A580FE0095AF8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F8865D16A580FD0095AF8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F8867216A580FD0095AF8F /* main.m in Sources */,
+				C7F8867916A580FD0095AF8F /* CLAppDelegate.m in Sources */,
+				C7F886AD16A589D20095AF8F /* WebPImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7F8866E16A580FD0095AF8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F8866F16A580FD0095AF8F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7F8867416A580FD0095AF8F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F8867516A580FD0095AF8F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C7F8867A16A580FE0095AF8F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F8867B16A580FE0095AF8F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7F8867D16A580FE0095AF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C7F8867E16A580FE0095AF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C7F8868016A580FE0095AF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebP-Viewer/WebP-Viewer-Prefix.pch";
+				INFOPLIST_FILE = "WebP-Viewer/WebP-Viewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7F8868116A580FE0095AF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebP-Viewer/WebP-Viewer-Prefix.pch";
+				INFOPLIST_FILE = "WebP-Viewer/WebP-Viewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WebP-Viewer/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F8865B16A580FD0095AF8F /* Build configuration list for PBXProject "WebP-Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F8867D16A580FE0095AF8F /* Debug */,
+				C7F8867E16A580FE0095AF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F8867F16A580FE0095AF8F /* Build configuration list for PBXNativeTarget "WebP-Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F8868016A580FE0095AF8F /* Debug */,
+				C7F8868116A580FE0095AF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F8865816A580FD0095AF8F /* Project object */;
+}
