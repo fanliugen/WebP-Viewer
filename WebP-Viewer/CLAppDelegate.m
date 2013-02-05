@@ -22,6 +22,7 @@
 //    NSImage *previewImage = [[[NSImage alloc] initWithContentsOfFile:@"/Users/Darcy/Downloads/hello.jpg"] autorelease];
 //    NSLog(@"previewImage: %@",previewImage);
 //    self.imageView.image = previewImage;
+    [self.window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)aNotification{

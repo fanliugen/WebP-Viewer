@@ -19,6 +19,7 @@
 		C709669D16A59C0500506754 /* WebP.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = C709668116A59A4F00506754 /* WebP.qlgenerator */; };
 		C709669E16A59DC800506754 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F886A416A5897E0095AF8F /* libwebp.a */; };
 		C70966A816A59E9E00506754 /* WebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F886AC16A589D20095AF8F /* WebPImage.m */; };
+		C77B9D7016C0972300C84B37 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B9D6F16C0972300C84B37 /* MainWindowController.m */; };
 		C7F8866616A580FD0095AF8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F8866516A580FD0095AF8F /* Cocoa.framework */; };
 		C7F8867016A580FD0095AF8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F8866E16A580FD0095AF8F /* InfoPlist.strings */; };
 		C7F8867216A580FD0095AF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F8867116A580FD0095AF8F /* main.m */; };
@@ -54,6 +55,8 @@
 		C709669216A59A5000506754 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		C709669416A59A5000506754 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C709669616A59A5000506754 /* WebP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebP-Prefix.pch"; sourceTree = "<group>"; };
+		C77B9D6E16C0972300C84B37 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		C77B9D6F16C0972300C84B37 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		C7F8866116A580FD0095AF8F /* WebP-Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebP-Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F8866516A580FD0095AF8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C7F8866816A580FD0095AF8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -175,6 +178,8 @@
 				C7F8866C16A580FD0095AF8F /* Supporting Files */,
 				C7F886AB16A589D20095AF8F /* WebPImage.h */,
 				C7F886AC16A589D20095AF8F /* WebPImage.m */,
+				C77B9D6E16C0972300C84B37 /* MainWindowController.h */,
+				C77B9D6F16C0972300C84B37 /* MainWindowController.m */,
 			);
 			path = "WebP-Viewer";
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				C7F8867216A580FD0095AF8F /* main.m in Sources */,
 				C7F8867916A580FD0095AF8F /* CLAppDelegate.m in Sources */,
 				C7F886AD16A589D20095AF8F /* WebPImage.m in Sources */,
+				C77B9D7016C0972300C84B37 /* MainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +519,7 @@
 				C709669816A59A5000506754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7F8865B16A580FD0095AF8F /* Build configuration list for PBXProject "WebP-Viewer" */ = {
 			isa = XCConfigurationList;
